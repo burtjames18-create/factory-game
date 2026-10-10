@@ -1,0 +1,7 @@
+{
+  "name": "factory-game-site",
+  "private": true,
+  "description": "Download page for Factory Game (installers are on GitHub Releases)",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}
