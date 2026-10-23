@@ -180,14 +180,20 @@
   <div class="row">
     <figure class="shot w7"><span class="num">01</span><img src="img/factory.jpg" alt="A large factory with assembly lines, belts and power" loading="lazy">
       <figcaption><h3>Build the machine</h3><p>Mine, smelt, assemble and research your way from burner drills to fusion, across a full tech tree.</p></figcaption></figure>
-    <figure class="shot w5"><span class="num">02</span><img src="img/orbit.jpg" alt="The whole planet seen from orbit with a rocket's orbit line" loading="lazy">
-      <figcaption><h3>A whole planet</h3><p>Zoom out from a single belt to the globe. Watch your cargo rockets lap the world and leave for deep space.</p></figcaption></figure>
+    <figure class="shot w5"><span class="num">02</span><img src="img/orbit.jpg" alt="The planet from orbit, with the orbital station and two orbital factories circling it" loading="lazy">
+      <figcaption><h3>A whole planet</h3><p>Zoom out from a single belt to the globe, with your station and factories circling overhead.</p></figcaption></figure>
   </div>
   <div class="row">
-    <figure class="shot w4"><span class="num">03</span><img src="img/launch.jpg" alt="A cargo rocket lifting off its pad" loading="lazy">
-      <figcaption><h3>Ship it home</h3><p>Fill Federation demand and launch the cargo.</p></figcaption></figure>
-    <figure class="shot w8"><span class="num">04</span><img src="img/night.jpg" alt="The factory at night lit by machine lights" loading="lazy">
-      <figcaption><h3>Day, night, weather</h3><p>A 20-minute day. Clouds that drift and change, rain, snow at the poles, dust storms and lightning.</p></figcaption></figure>
+    <figure class="shot w4"><span class="num">03</span><img src="img/launch.jpg" alt="A cargo pod lifting off its landing pad" loading="lazy">
+      <figcaption><h3>Launch it</h3><p>Load the landing pads and send the cargo up to orbit.</p></figcaption></figure>
+    <figure class="shot w8"><span class="num">04</span><img src="img/station.jpg" alt="The orbital station with its spinning habitat ring and a cargo ship at its bay" loading="lazy">
+      <figcaption><h3>The orbital station</h3><p>Pods dock in its hangar, and settler ships load at its bay and leave for new worlds.</p></figcaption></figure>
+  </div>
+  <div class="row">
+    <figure class="shot w7"><span class="num">05</span><img src="img/orbital.jpg" alt="A long orbital factory with solar wings over the planet" loading="lazy">
+      <figcaption><h3>Factories in orbit</h3><p>Link a landing pad to an orbital factory. It makes lattice processors that speed up your machines, and parts for the ships to come.</p></figcaption></figure>
+    <figure class="shot w5"><span class="num">06</span><img src="img/hurricane.jpg" alt="A hurricane spinning off the coast" loading="lazy">
+      <figcaption><h3>Day, night, weather</h3><p>A 20-minute day. Wind bands carry clouds round the world, with storms, lightning, snow at the poles and hurricanes over the sea.</p></figcaption></figure>
   </div>
 </section>
 
@@ -213,8 +219,9 @@
 <script>
   // the reel: screenshots from the game drifting and crossfading behind the page
   const FRAMES = [
-    ['launch', 'Cargo launch'], ['inserters', 'Smelting line'], ['clouds', 'Weather from orbit'], ['factory', 'Assembly rows'],
-    ['orbit', 'Orbit'], ['storm', 'Thunderstorm'], ['dusk', 'Dusk'], ['night', 'Night shift'],
+    ['launch', 'Cargo launch'], ['inserters', 'Smelting line'], ['station', 'Orbital station'], ['factory', 'Assembly rows'],
+    ['orbital', 'Orbital factory'], ['storm', 'Thunderstorm'], ['hurricane', 'Hurricane'], ['dusk', 'Dusk'],
+    ['orbit', 'Orbit'], ['clouds', 'Weather from orbit'], ['orbital-night', 'Orbital factory at night'], ['night', 'Night shift'],
   ]
   const layers = [...document.querySelectorAll('.reel div')], feed = document.getElementById('feed'), feedBox = document.querySelector('.feed')
   const PANS = ['pan-a', 'pan-b', 'pan-c'], HOLD = 9000
